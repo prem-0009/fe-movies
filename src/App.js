@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
-// import Watched from "./components/Watched";
+
 import WatchList from "./components/WatchList";
 import Watched from "./components/Watched";
 import Add from "./components/Add";
