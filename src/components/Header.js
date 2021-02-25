@@ -8,8 +8,8 @@ import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 
-
-const useStyles = makeStyles((theme) => ({//material ui
+const useStyles = makeStyles((theme) => ({
+  //material ui
   root: {
     flexGrow: 1,
   },
@@ -22,21 +22,20 @@ const useStyles = makeStyles((theme) => ({//material ui
 }));
 
 export default function Header() {
-  const classes = useStyles();//material ui
+  const classes = useStyles(); //material ui
 
   return (
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          
-          <Link to='/'>
-          <Button color="inherit">Watch List</Button>
+          <Link to="/">
+            <Button color="white">Watch List</Button>
           </Link>
-          <Link to='/watched'>
-          <Button color="inherit">Watched</Button>
+          <Link to="/watched">
+            <Button color="white">Watched</Button>
           </Link>
-          <Link to='/add'>
-          <Button color="inherit">Add</Button>
+          <Link to="/add">
+            <Button color="white">Add</Button>
           </Link>
         </Toolbar>
       </AppBar>
